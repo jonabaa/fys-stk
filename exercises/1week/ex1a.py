@@ -33,6 +33,7 @@ print('Variance score: %.2f' % r2_score(y, ypredict))
 # plotting
 plt.plot(x, ypredict, "r-")
 plt.plot(x, ypredictSL, "b--")
+plt.plot(x, abs((ypredict - y)/y), "go")
 plt.plot(x, y ,'ro')
 plt.axis([0,2.0,0, 15.0])
 plt.xlabel(r'$x$')
